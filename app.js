@@ -11,17 +11,19 @@ form.addEventListener('submit', function(event) {
   // Get the text from the input field, trimmed of whitespace
     const text = input.value.trim();
 
-  // Check if the text is not empty 
-   if (text !== '') {
+  // If text box isn't empty, add the input from the user into a list
+  if (text !== '') {
     // Create a new list item element, span element for the text, and button element for deleting
     const listItem = document.createElement('li');
     const textSpan = document.createElement('span');
     const deleteButton = document.createElement('button');
+    const checkbox = document.createElement('input');
     
     // Add the span and button elements to the list item element
+    listItem.appendChild(checkbox);
     listItem.appendChild(textSpan);
     listItem.appendChild(deleteButton);
-    
+    checkbox.type = 'checkbox';
     // Add the new list item element to the list
     list.appendChild(listItem);
     

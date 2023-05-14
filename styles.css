@@ -3,7 +3,7 @@
     background-color: #a0d9ff;
     color: #333;
   }
-  
+
   .container {
     max-width: 800px;
     margin: 0 auto;
@@ -12,24 +12,25 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
   }
-  
+
   h1 {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
   }
-  
+
   form {
     display: flex;
     margin-bottom: 20px;
   }
-  
+
   input[type="text"] {
     flex-grow: 1;
     padding: 10px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
+    margin-right: 8px;
   }
   
   input[type="submit"] {
@@ -42,13 +43,16 @@
     margin-left: 10px;
     cursor: pointer;
   }
-  
+  span {
+    justify-content: ;
+  }
+
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  
+
   li {
     display: flex;
     justify-content: space-between;
@@ -57,6 +61,13 @@
     border-bottom: 1px solid #ccc;
   }
 
+  li input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  li span {
+    flex: 1;
+  }
 
   li button {
     background-color: #af5656;
