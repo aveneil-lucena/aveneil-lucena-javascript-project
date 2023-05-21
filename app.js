@@ -23,19 +23,21 @@ form.addEventListener('submit', function(event) {
     listItem.appendChild(checkbox);
     listItem.appendChild(textSpan);
     listItem.appendChild(deleteButton);
+
+    // Adds checkbox functionality
     checkbox.type = 'checkbox';
+
     // Add the new list item element to the list
     list.appendChild(listItem);
     
     // Set the text content of the span element to the input text
     textSpan.textContent = text;
-    
+
+    // Sets the input field blank
+    input.value = '';    
+
     // Set the text content of the delete button
     deleteButton.textContent = 'Delete';
-    
-    // Clear the input field and give it focus
-    input.value = '';
-    input.focus();
     
     // Listen for clicks on the delete button
     deleteButton.addEventListener('click', function() {
@@ -43,6 +45,7 @@ form.addEventListener('submit', function(event) {
     list.removeChild(listItem);
     });
   }
+  // If input is empty
   else {
     alert('Empty! Please add a task.');
   }
