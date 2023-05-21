@@ -1,80 +1,65 @@
   body {
     font-family: Arial, sans-serif;
-    background-color: #a0d9ff;
-    color: #333;
-  }
-
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    background-color: #c9ccce;
+    color: #333333;
   }
 
   h1 {
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
+    /* Margins for the the input field */
   form {
     display: flex;
     margin-bottom: 20px;
   }
 
+  /* Styles the contents within the input field */
   input[type="text"] {
     flex-grow: 1;
     padding: 10px;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 20px;
     margin-right: 8px;
-  }
-  
-  input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-  span {
-    justify-content: ;
+    color: rgb(78, 73, 73);
   }
 
   ul {
-    list-style: none;
     margin: 0;
     padding: 0;
   }
 
+  /* Bar that separates tasks */
   li {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #000000;
   }
 
+  /* Checkbox completion indicator */
   li input[type="checkbox"] {
     margin-right: 10px;
   }
 
+  /* List content */
   li span {
     flex: 1;
+    color: rgb(0, 0, 0);
   }
 
+  /* Delete button for List content */
   li button {
-    background-color: #af5656;
-    color: #ffffff;
+    background-color: #e29f9f;
+    border-color: rgb(204, 60, 60);
+    color: #000000;
     padding: 5px 10px;
-    border: none;
     border-radius: 5px;
     font-size: 14px;
+    font-weight: bold;
     cursor: pointer;
   }
